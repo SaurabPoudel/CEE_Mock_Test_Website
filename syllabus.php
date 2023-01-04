@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEE Mock Test</title>
+    <link rel="stylesheet" href="styles/styles2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="mynav">
+        <nav class="navbar  navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.php">MBBSDote</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">CEE House</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="syllabus.php">Syllabus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>   
+                        <li class="nav-item">
+                            
+                            <button type="button" class="btn btn-warning btn-sm"><a class="nav-link" href="#">Get Started</a></button>
+                        </li>
+                        
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+        <div class="hero-text">
+                 <h1>Syllabus</h1>
+                 <p>We’ve made researching your courses easier! Read on to know everything important about CEE Syllabus.</p>
+         </div>
+    </div>
+    <div class="container">
+        <button type="button" class="collapsible"><h3>Biology</h3></button>
+        <div class="content">
+         <p>Lorem ipsum...</p>
+        </div>
+        <button type="button" class="collapsible"><h3>Chemistry</h3></button>
+        <div class="content">
+         <p>Lorem ipsum...</p>
+        </div>
+        <button type="button" class="collapsible"><h3>Physics</h3></button>
+        <div class="content">
+         <p>Lorem ipsum...</p>
+        </div>
+        <button type="button" class="collapsible"><h3>Mental Agility Test</h3></button>
+        <div class="content">
+         <p>Lorem ipsum...</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+         coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+  });
+}
+
+</script>
+</html>
